@@ -5,6 +5,15 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+ruby '2.4.6'
+###############
+gem 'devise'
+gem 'carrierwave'
+gem 'bootstrap-sass'
+gem 'jquery-rails'
+gem 'font-awesome-rails'
+gem 'better_errors', group: :development
+###############
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.7'
