@@ -8,7 +8,7 @@
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
 
-  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+  <% if devise_mapping.confirmable? && resource. pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
 
@@ -19,6 +19,11 @@
       <br />
       <em><%= @minimum_password_length %> characters minimum</em>
     <% end %>
+  </div>
+
+  <div class="form-group">
+    <strong>Upload a Profile Pic:</strong>
+    <%= f.file_field :avatar %>
   </div>
 
   <div class="form-group">
